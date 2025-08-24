@@ -1,0 +1,17 @@
+﻿{
+  "name": "Amazing Grace",
+  "difficulty": "Intermediate", 
+  "tempo": 90,
+  "key": "G Major",
+  "timeSignature": "3/4",
+  "notes": [
+    {"time": 0, "note": 62, "duration": 1.0, "velocity": 70},
+    {"time": 1.0, "note": 67, "duration": 0.5, "velocity": 80},
+    {"time": 1.5, "note": 69, "duration": 0.5, "velocity": 85},
+    {"time": 2.0, "note": 67, "duration": 0.5, "velocity": 80}
+  ],
+  "chords": [
+    {"time": 0, "notes": [55, 59, 62], "duration": 3.0}
+  ],
+  "lyrics": ["Amazing grace how sweet the sound"]
+}

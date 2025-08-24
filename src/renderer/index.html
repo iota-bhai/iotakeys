@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>IotaKeys</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: file:; script-src 'self' 'unsafe-inline' file:; style-src 'self' 'unsafe-inline' file:;">
+  <link rel="stylesheet" href="../styles/main.css" />
+  <style>
+    /* toolbar layout quick styles; main.css handles theme */
+    #toolbar { display:flex; gap:8px; align-items:center; }
+    .toolbar-group { display:flex; gap:6px; align-items:center; }
+    input[type="range"] { width:140px; }
+    select { padding:6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div id="app-root">
+    <header id="header">
+      <div style="display:flex;align-items:center;gap:12px">
+        <h1 style="margin:0">IotaKeys</h1>
+        <div id="toolbar" class="toolbar-group">
+          <!-- Project -->
+          <div class="toolbar-group" id="project-controls">
+            <button id="btn-open">Open Project</button>
+            <button id="btn-new">New Project</button>
+            <button id="btn-import">Import MIDI</button>
+          </div>
+
+          <!-- Playback -->
+          <div class="toolbar-group" id="playback-controls">
+            <button id="btn-play">Play</button>
+            <button id="btn-pause">Pause</button>
+            <button id="btn-stop">Stop</button>
+          </div>
+
+          <!-- Practice / Engine -->
+          <div class="toolbar-group" id="practice-controls">
+            <label>Tempo <input id="tempo-slider" type="range" min="40" max="240" value="120" /></label>
+            <select id="difficulty-select">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate" selected>Intermediate</option>
+              <option value="hard">Hard</option>
+            </select>
+            <label><input id="loop-chk" type="checkbox" /> Loop</label>
+            <label><input id="metronome-chk" type="checkbox" /> Metronome</label>
+          </div>
+
+          <!-- Recording / MIDI -->
+          <div class="toolbar-group" id="recording-controls">
+            <button id="btn-record">Record</button>
+            <button id="btn-stop-record">Stop Rec</button>
+            <button id="btn-connect-midi">Connect MIDI</button>
+          </div>
+
+          <!-- Utility -->
+          <div class="toolbar-group" id="utility-controls">
+            <button id="btn-generate">Generate Variants</button>
+            <button id="btn-evaluate">Evaluate</button>
+            <button id="btn-settings">Settings</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-area">
+      <section id="lead-sheet" class="panel">Lead Sheet</section>
+      <section id="falling-notes" class="panel">Falling Notes</section>
+      <section id="piano-panel" class="panel"></section>
+    </main>
+
+    <footer id="footer">IotaKeys</footer>
+  </div>
+
+  <!-- load modules that attach to window.* (defensive modules) -->
+  <script src="../audio/robust-audio.js"></script>
+  <script src="../midi/advanced-midi.js"></script>
+  <script src="../components/midi-handler.js"></script>
+  <script src="../components/piano.js"></script>
+  <script src="../components/practice-engine.js"></script>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

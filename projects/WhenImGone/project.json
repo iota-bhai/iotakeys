@@ -1,0 +1,22 @@
+{
+  "title": "WhenImGone",
+  "composer": "Unknown",
+  "key": "C Major",
+  "tempo": 120,
+  "description": "A beautiful piano piece for learning and practice",
+  "difficulty": "intermediate",
+  "arrangements": {
+    "easy": "easy.json",
+    "hard": "hard.json"
+  },
+  "audioFile": "When I'm Gone.m4a",
+  "tags": [
+    "popular",
+    "intermediate",
+    "practice"
+  ],
+  "duration": "3:45",
+  "created": "2025-01-01T00:00:00.000Z",
+  "modified": "2025-01-15T00:00:00.000Z",
+  "version": "1.0.0"
+}

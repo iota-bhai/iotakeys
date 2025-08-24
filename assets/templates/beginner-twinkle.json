@@ -1,0 +1,18 @@
+﻿{
+  "name": "Twinkle Twinkle Little Star",
+  "difficulty": "Beginner",
+  "tempo": 120,
+  "key": "C Major",
+  "timeSignature": "4/4",
+  "notes": [
+    {"time": 0, "note": 60, "duration": 0.5, "velocity": 80},
+    {"time": 0.5, "note": 60, "duration": 0.5, "velocity": 80},
+    {"time": 1.0, "note": 67, "duration": 0.5, "velocity": 80},
+    {"time": 1.5, "note": 67, "duration": 0.5, "velocity": 80},
+    {"time": 2.0, "note": 69, "duration": 0.5, "velocity": 80},
+    {"time": 2.5, "note": 69, "duration": 0.5, "velocity": 80},
+    {"time": 3.0, "note": 67, "duration": 1.0, "velocity": 80}
+  ],
+  "chords": [],
+  "lyrics": ["Twinkle twinkle little star", "How I wonder what you are"]
+}

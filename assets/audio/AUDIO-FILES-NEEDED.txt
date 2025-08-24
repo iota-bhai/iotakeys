@@ -1,0 +1,27 @@
+﻿Required Audio Files for IotaKeys:
+
+METRONOME SOUNDS:
+- metronome-click.wav (Main metronome beat)
+- metronome-accent.wav (Accented beat - usually higher pitch)
+- metronome-tick.wav (Subdivision ticks)
+
+FEEDBACK SOUNDS:
+- success.wav (Correct note played)
+- error.wav (Wrong note or timing)
+- perfect.wav (Perfect timing/accuracy)
+- applause.wav (End of song celebration)
+
+PIANO SAMPLES (Optional - can use Web Audio API instead):
+- piano-soundfont.sf2 (Full piano soundfont)
+- Or individual samples: C4.wav, D4.wav, E4.wav, etc.
+
+RECOMMENDED SOURCES:
+- Freesound.org (CC licensed sounds)
+- Zapsplat.com (with account)
+- Your own recordings
+- Generated tones (for metronome)
+
+FILE FORMATS:
+- WAV (recommended for quality)
+- MP3 (smaller size)
+- OGG (good compression)

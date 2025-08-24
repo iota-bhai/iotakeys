@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1a1a2e" rx="64"/>
+  
+  <!-- Piano keys background -->
+  <rect x="64" y="200" width="384" height="112" fill="#16213e" stroke="#0f3460" stroke-width="4" rx="8"/>
+  
+  <!-- White keys -->
+  <rect x="64" y="200" width="54" height="112" fill="#ffffff" rx="4"/>
+  <rect x="118" y="200" width="54" height="112" fill="#ffffff" rx="4"/>
+  <rect x="172" y="200" width="54" height="112" fill="#ffffff" rx="4"/>
+  <rect x="226" y="200" width="54" height="112" fill="#ffffff" rx="4"/>
+  <rect x="280" y="200" width="54" height="112" fill="#ffffff" rx="4"/>
+  <rect x="334" y="200" width="54" height="112" fill="#ffffff" rx="4"/>
+  <rect x="388" y="200" width="60" height="112" fill="#ffffff" rx="4"/>
+  
+  <!-- Black keys -->
+  <rect x="91" y="200" width="27" height="70" fill="#000000" rx="4"/>
+  <rect x="145" y="200" width="27" height="70" fill="#000000" rx="4"/>
+  <rect x="253" y="200" width="27" height="70" fill="#000000" rx="4"/>
+  <rect x="307" y="200" width="27" height="70" fill="#000000" rx="4"/>
+  <rect x="361" y="200" width="27" height="70" fill="#000000" rx="4"/>
+  
+  <!-- Musical note decoration -->
+  <circle cx="256" cy="120" r="24" fill="#4a9eff"/>
+  <rect x="280" y="96" width="8" height="48" fill="#4a9eff"/>
+  <path d="M280 96 Q320 86 320 110 L320 134 Q320 144 310 144 Q300 144 300 134 L300 110 Q300 96 280 96" fill="#4a9eff"/>
+  
+  <!-- App title -->
+  <text x="256" y="380" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="bold">IotaKeys</text>
+  <text x="256" y="420" text-anchor="middle" fill="#888888" font-family="Arial, sans-serif" font-size="24">Piano Learning</text>
+</svg>

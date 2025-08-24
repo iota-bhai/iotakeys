@@ -1,0 +1,15 @@
+/* main.css - layout and theme */
+:root {
+  --bg: #0b0f14;
+  --panel-bg: #0f1720;
+  --accent: #7dd3fc;
+  --text: #e6eef6;
+  --muted: #95a3b5;
+}
+html,body,#app-root { height:100%; margin:0; font-family: Inter, Arial, sans-serif; background:var(--bg); color:var(--text); }
+#app-root { display:grid; grid-template-rows: auto 1fr auto; gap:8px; height:100vh; }
+header#header { padding:12px 18px; display:flex; align-items:center; justify-content:space-between; background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-bottom:1px solid rgba(255,255,255,0.02); }
+#main-area { display:grid; grid-template-rows: 35% 45% 20%; gap:6px; padding:8px; box-sizing:border-box; }
+.panel { background:var(--panel-bg); border-radius:8px; padding:8px; overflow:hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+#piano-panel { height:140px; padding:4px; }
+button { background:var(--accent); border:none; color:#002; padding:8px 10px; border-radius:6px; cursor:pointer; }

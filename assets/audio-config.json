@@ -1,0 +1,17 @@
+﻿{
+  "metronome": {
+    "click": "assets/audio/metronome-click.wav",
+    "accent": "assets/audio/metronome-accent.wav",
+    "tick": "assets/audio/metronome-tick.wav"
+  },
+  "piano": {
+    "soundfont": "assets/audio/piano-soundfont.sf2",
+    "samples": "assets/samples/"
+  },
+  "feedback": {
+    "success": "assets/audio/success.wav",
+    "error": "assets/audio/error.wav",
+    "perfect": "assets/audio/perfect.wav",
+    "applause": "assets/audio/applause.wav"
+  }
+}

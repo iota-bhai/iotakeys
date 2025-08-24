@@ -1,0 +1,20 @@
+﻿{
+  "templates": [
+    {
+      "id": "beginner-twinkle",
+      "name": "Twinkle Twinkle Little Star",
+      "difficulty": "Beginner",
+      "file": "beginner-twinkle.json",
+      "description": "Classic nursery rhyme, perfect for beginners",
+      "tags": ["nursery", "simple", "C-major"]
+    },
+    {
+      "id": "intermediate-amazing-grace", 
+      "name": "Amazing Grace",
+      "difficulty": "Intermediate",
+      "file": "intermediate-amazing-grace.json",
+      "description": "Beautiful hymn with simple chord progressions",
+      "tags": ["hymn", "3/4", "G-major"]
+    }
+  ]
+}

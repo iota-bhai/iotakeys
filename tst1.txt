@@ -1,0 +1,233 @@
+
+
+Start a new memory thread for this conversation.
+Don't use past memories, kind of like incognito mode.
+But remember everything from this conversation.
+
+We are working on a personal local piano learning and streaming app project,
+which is also shared and maintained in a public repo ( Link - "https://github.com/iota-bhai/iotakeys" ).
+root - "C:\Users\Lenovo\IotaKeys"
+
+
+Basically, I'm making an app to use my digital piano (Yamaha PSR E373) with my laptop,
+to learn, evaluate and record/stream few great lesser/more known songs and piano.
+
+In current version synced on repo, The app has finally achieved successful launching capability after a week of days and nights out working.
+A hard earned success we don't want to lose.
+But most of the features are placeholders/ partially implemented/ fully implemented/ unmentiontioned/ or blatantly wrong.
+
+Over time collect all info you need from me and create a master plan, that contains, full hierarchy of the project root, then description of each file, 
+all functions and parameters it contains, ending file description with all files it links too with each function dependency on the files listed., if any. 
+Also, for each file, add the current status of each function in current version of repo, as well as enhancements decided for the feature and for the function in detail.
+
+Evolve to the full plan by asking questions etc. Freely choose and suggest or do appropriately, things to make it best and modernized and featurefull with great performance.
+
+We'll also discuss problems I face when coding with AI, 
+so towards the end of the master plan, add a list of common errors to avoid too. 
+Ask for this before finalising the master plan, that I can report some old errors.
+
+Don't give plan to me yet. 
+first understand and keep updating but give only when you understand everything you need for full detail And then I'll store it in repo. 
+I want to keep a free head focused on ideas and utility rather than possibilities in implementation. 
+I'm delegating that part to you.
+
+Now, first explore the repo fully.
+Then give me the paths of all the local files you need to see to be fully aware of the project state, based on the root hierarchy shared at the bottom of the message. 
+I'll share them using gist and after that confirm if you have recieved full files and not truncated version to ensure no need of guesswork.
+Proceed only after getting everything you need to be fully sure of project's full state.
+Note - No guesses allowed.  -----  Don't miss this.
+
+After that, we'll discuss few features at a time, through you controlling the flow, 
+to make a full runthrough of the project with enhancements to each feature with max detail,
+to ensure all decisions have already been made in the master plan.
+
+After that, do the eroor discussion and finally share the full and final master_plan.txt file using multiple methods.
+
+A screenshot of the current app interface is also attached, analyse, understand and think of enhancements from it.
+
+
+Here are a few enhancements and ideas about the individual features, that I'm sharing in the beginning itself.
+Make sure to add these enhancements to your running list of enhancements and the internal live master plan.
+
+
+A dialog system for new project,
+to ask for song audio file and create easy and hard versions of song in midi format and other necessary resourses and make a new project, 
+optionally midi files can also be fed into the new project manually.
+
+The feature to connect with yamaha piano/ initialise connected piano.
+
+The 3 containers, top lead sheet for the loaded midi, middle falling notes, and bottom connected piano display showing currently pressed buttons, should all be horizontally alligned one on top of other and vertically fit completely within the window.
+
+Make sure to discuss each feature components in max detail. and I'll add a few new.
+
+Make sure to not miss anything in the master plan.
+
+
+Structure of root - 
+
+PS C:\Windows\system32> cd C:\Users\Lenovo\IotaKeys
+PS C:\Users\Lenovo\IotaKeys> .\scripts\analyze-structure.ps1
+🏗️ IOTAKEYS PROJECT STRUCTURE
+================================
+├── assets
+│   ├── audio
+│   │   └── AUDIO-FILES-NEEDED.txt
+│   ├── icons
+│   │   ├── icon.ico
+│   │   ├── icon.png
+│   │   ├── icon.svg
+│   │   ├── icon-128.svg
+│   │   ├── icon-16.svg
+│   │   ├── icon-256.svg
+│   │   ├── icon-32.svg
+│   │   ├── icon-48.svg
+│   │   ├── icon-512.svg
+│   │   └── icon-64.svg
+│   ├── samples
+│   │   ├── click.wav
+│   │   └── sample_a4.wav
+│   ├── styles
+│   │   └── main.css
+│   ├── templates
+│   │   ├── beginner-twinkle.json
+│   │   ├── intermediate-amazing-grace.json
+│   │   └── templates.json
+│   ├── themes
+│   │   ├── animals
+│   │   │   ├── animals1.png
+│   │   │   ├── animals2.png
+│   │   │   └── bg.jpg
+│   │   ├── blackhole
+│   │   │   ├── bg.jpg
+│   │   │   └── blackhole1.png
+│   │   ├── city
+│   │   │   ├── bg.jpg
+│   │   │   └── city1.png
+│   │   ├── darkmetal
+│   │   │   ├── bg.jpg
+│   │   │   └── metal1.png
+│   │   ├── jungle
+│   │   │   ├── bg.jpg
+│   │   │   ├── jungle1.png
+│   │   │   └── jungle2.png
+│   │   ├── neon
+│   │   │   ├── bg.jpg
+│   │   │   └── space1.png
+│   │   ├── paper
+│   │   │   └── paper1.png
+│   │   └── space
+│   │       ├── bg.jpg
+│   │       ├── space1.png
+│   │       └── space2.png
+│   ├── audio-config.json
+│   ├── grunge-dark.png
+│   ├── icon.ico
+│   ├── icon.png
+│   ├── icon.svg
+│   ├── icon_base64.txt
+│   ├── neon-hud.png
+│   ├── paper-texture.png
+│   ├── spark-preset.png
+│   ├── test.ps1
+│   └── vexflow-min.js
+├── backups
+├── dist
+├── portable
+│   ├── Launch-IotaKeys.bat
+│   └── README.txt
+├── projects
+│   └── WhenImGone
+│       ├── arrangement.json
+│       ├── easy.json
+│       ├── easy_auto.json
+│       ├── easy_auto.mid
+│       ├── hard.json
+│       ├── hard_auto.json
+│       ├── hard_auto.mid
+│       ├── project.json
+│       └── When I'm Gone.m4a
+├── scripts
+│   ├── analyze-structure.ps1
+│   ├── check-assets.ps1
+│   ├── clean-build.ps1
+│   ├── complete-build.ps1
+│   ├── copy-assets.ps1
+│   ├── fix-packagejson.ps1
+│   ├── make_gist.ps1
+│   ├── p.ps1
+│   └── production-build.ps1
+├── src
+│   ├── ai
+│   │   └── learning-assistant.js
+│   ├── audio
+│   │   └── robust-audio.js
+│   ├── components
+│   │   ├── app.js
+│   │   ├── midi-handler.js
+│   │   ├── piano.js
+│   │   └── practice-engine.js
+│   ├── midi
+│   │   └── advanced-midi.js
+│   ├── renderer
+│   │   └── index.html
+│   ├── styles
+│   │   ├── components.css
+│   │   ├── main.css
+│   │   └── piano.css
+│   ├── asset-loader.js
+│   ├── main.js
+│   ├── preload.js
+│   └── renderer.js
+├── .gitattributes
+├── .gitignore
+├── build.ps1
+├── package.json
+├── package-lock.json
+├── README.md
+└── tst1.txt
+
+📊 KEY FILES ANALYSIS:
+✅ EXISTS : package.json
+✅ EXISTS : src/main.js
+✅ EXISTS : src/renderer/index.html
+✅ EXISTS : src/styles/main.css
+✅ EXISTS : src/components/app.js
+✅ EXISTS : assets/icons/icon.ico
+✅ EXISTS : projects/WhenImGone/project.json
+
+📈 DIRECTORY SIZES:
+src : 106.18 KB
+assets : 5.37 MB
+projects : 3.35 MB
+node_modules : 451.38 MB
+dist : 0.00 KB
+PS C:\Users\Lenovo\IotaKeys>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Import MIDI button not working.
+
+
+Screenshot attached for current status.
+
+
+
+
+
